@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        var x = +prompt("Ввежите x для формулы");
+        var n = +prompt("Введите количество шагов");
+        var inter = 0;
+        var answer = 0;
+
+        for(var i = 1; i <= n; i++){
+            inter = ((2 * i - 1) * (x**(2*i+1)))/((2 * i) * (2*i+1));
+            answer += inter;
+        }
+
+        alert("ответ " + answer);
+    </script>
+</body>
+</html>
